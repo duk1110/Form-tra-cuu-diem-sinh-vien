@@ -29,7 +29,7 @@ namespace WinFormsApp7
                 textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value?.ToString() ?? "";
                 textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value?.ToString() ?? "";
                 textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value?.ToString() ?? "";
-                textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value?.ToString() ?? ""; // Sử dụng textBox4 cho điểm
+                textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value?.ToString() ?? ""; 
             }
         }
 
@@ -109,10 +109,7 @@ namespace WinFormsApp7
 
             if (sv != null)
             {
-                MessageBox.Show($"Mã: {sv.MaSinhVien}\n" +
-                                $"Họ Tên: {sv.HoTen}\n" +
-                                $"Lớp: {sv.LopHoc}\n" +
-                                $"Điểm: {sv.Diem}\n", "Thông tin sinh viên", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Mã: {sv.MaSinhVien}\n" + $"Họ Tên: {sv.HoTen}\n" + $"Lớp: {sv.LopHoc}\n" + $"Điểm: {sv.Diem}\n", "Thông tin sinh viên", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
